@@ -1,0 +1,11 @@
+#footer{
+    background: -webkit-linear-gradient(left, rgba(73,165,191,1) 35%, rgba(73,165,191,1) 43%, rgba(73,165,191,1) 63%, rgba(73,165,191,1) 71%);
+}
+
+#links a{
+
+    color: black;
+    font:bold 16px "Trebuchet MS"!important;
+
+
+}
