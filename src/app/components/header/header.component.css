@@ -1,36 +1,12 @@
-#dropdownmenu {
-
-    background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(172,200,220,1) 41%, rgba(172,200,220,1) 46%, rgba(172,200,220,1) 61%);
-
-    /* background: -webkit-linear-gradient(left, rgba(250,246,199,1) 77%, rgba(251,243,195,1) 80%, rgba(255,222,169,1) 100%); */
-
-}
-
-/* negrilla a las letras */
-#dropdownmenu a{
-    /* font:bold 15px "Trebuchet MS"!important; */
-
-}
-/* titulo con negrilla y blanco */
-#semillero {
-
-color: black;
-
-   /* color: white; */
-    font:bold 23px "Trebuchet MS"!important;
-}
 #header img{
  
-    /* background-color: white; */
-    width: 85px;
+    object-fit: cover;
+    width: 50px;
+    height: 40px;
+
 }
-/* barra del header */
+
 #header{
-
-    background: -webkit-linear-gradient(left, rgba(72,171,199,1) 0%, rgba(72,171,199,1) 20%, rgba(60,154,180,1) 41%, rgba(50,123,143,1) 100%)!important;
-
+    background-color: rgba(0,0, 0, 0.6);
 }
   
-.Tipoletra {
-    color: greenyellow!important;
-}

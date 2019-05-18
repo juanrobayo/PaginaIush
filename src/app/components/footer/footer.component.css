@@ -1,11 +1,30 @@
 #footer{
-    background: -webkit-linear-gradient(left, rgba(73,165,191,1) 35%, rgba(73,165,191,1) 43%, rgba(73,165,191,1) 63%, rgba(73,165,191,1) 71%);
+    background-color: rgba(0,0, 0, 0.8);
 }
 
-#links a{
-
-    color: black;
-    font:bold 16px "Trebuchet MS"!important;
-
-
+ p,.figure-caption{
+    color: white;
 }
+
+#links  a{
+    color: rgb(99, 153, 17);
+}
+
+.description .titulo {
+    font-size: 20px;
+    color: white;
+}
+
+.description .contenido {
+    font-size: 12px;
+    color: white;
+}
+
+ .form-group label {
+    color: white;
+}
+
+
+
+
+
