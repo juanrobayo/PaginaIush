@@ -1,0 +1,34 @@
+#home .carousel-inner img{
+
+/* altura de imagen */
+max-height: 100 vh;
+/* comando para organizar image */
+object-fit: cover;
+
+/* escala de gris .contrastar pantalla */
+filter: grayscale(40%);
+}
+/* posicion relativa para texto */
+#carouselExampleControls{
+position: relative;
+
+}
+
+#carouselExampleControls .overlay{
+/* sobre escribir texto en imagenes y  response */
+    position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+background-color: rgba(0, 0, 0, 0.5);
+color: white;
+}
+
+#carouselExampleControls .overlay .container,
+#carouselExampleControls .overlay .row{
+        height: 100%;
+    }
+    #button .button{
+        background-color: red!important;
+    }
