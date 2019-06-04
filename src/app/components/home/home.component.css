@@ -1,7 +1,7 @@
 #home .carousel-inner img{
 
 /* altura de imagen */
-max-height: 100 vh;
+height: 600px;
 /* comando para organizar image */
 object-fit: cover;
 
@@ -16,7 +16,7 @@ position: relative;
 
 #carouselExampleControls .overlay{
 /* sobre escribir texto en imagenes y  response */
-    position: absolute;
+position: absolute;
 top: 0;
 bottom: 0;
 left: 0;
