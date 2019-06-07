@@ -1,17 +1,11 @@
 #home .carousel-inner img{
-
-/* altura de imagen */
 height: 600px;
-/* comando para organizar image */
-object-fit: cover;
-
-/* escala de gris .contrastar pantalla */
+object-fit: fill;
 filter: grayscale(40%);
 }
 /* posicion relativa para texto */
 #carouselExampleControls{
 position: relative;
-
 }
 
 #carouselExampleControls .overlay{
@@ -21,14 +15,12 @@ top: 0;
 bottom: 0;
 left: 0;
 right: 0;
-background-color: rgba(0, 0, 0, 0.5);
+background-color: rgba(0, 0, 0, 0.4);
 color: white;
 }
 
 #carouselExampleControls .overlay .container,
-#carouselExampleControls .overlay .row{
-        height: 100%;
-    }
-    #button .button{
-        background-color: red!important;
-    }
+#carouselExampleControls .overlay .row  {
+    height: 100%;
+}
+
