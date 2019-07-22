@@ -1,0 +1,22 @@
+.LogoIush {
+    width: 80%; 
+    display:block;
+    margin:auto;
+}
+
+.cust{
+    position: absolute;
+    margin-left: 8px;
+    margin-top: 2px;
+    padding-top: 3px;
+}
+
+#encapsulamientoContainer{
+    margin:0 auto;
+    margin-top: 10%;
+    padding: 0;
+}
+
+
+
+
