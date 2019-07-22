@@ -6,11 +6,13 @@ import { LineasPComponent } from './components/lineas-p/lineas-p.component';
 
 
 
+
 const routes: Routes = [
 
 {path:'',component:HomeComponent},
-{path:'home',component:HomeComponent},
-]
+{path:'home',component:HomeComponent}
+
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
