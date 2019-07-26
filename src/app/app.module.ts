@@ -14,13 +14,17 @@ import { AngularFireStorageModule } from '@angular/fire/storage';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { FormsModule } from '@angular/forms';
+import { LineaspComponent } from './components/lineasp/lineasp.component';
+import { IntegrantesComponent } from './components/integrantes/integrantes.component';
 
 
 const appRoutes: Routes = [
   {path: '', component:HomeComponent},
   {path: 'home', component:HomeComponent},
   {path: 'login', component:LoginComponent},
-  {path: 'proyectos', component:ProyectosComponent}
+  {path: 'proyectos', component:ProyectosComponent},
+  {path: 'Lineas-Profundizacion', component:LineaspComponent},
+  {path: 'Integrantes', component:IntegrantesComponent}
 ];
 @NgModule({
   declarations: [
@@ -29,7 +33,9 @@ const appRoutes: Routes = [
     HomeComponent,
     FooterComponent,
     ProyectosComponent,
-    LoginComponent
+    LoginComponent,
+    LineaspComponent,
+    IntegrantesComponent
   ],
   imports: [
     BrowserModule,

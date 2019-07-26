@@ -3,7 +3,7 @@
 }
 
  p,.figure-caption{
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 #links  a{
@@ -33,17 +33,17 @@
 }
 
 .social-link.twitter{
-    background-image: url("src/assets/img/twitter.svg"); 
-    
+    background-image: url("src/assets/img/twitter.svg");
+
 }
 
 .social-link.facebook{
-    background-image: url("src/assets/img/facebook.png"); 
-   
+    background-image: url("src/assets/img/facebook.png");
+
 }
 
 .social-link.instagram{
-    background-image: url("src/assets/img/instagram.png"); 
+    background-image: url("src/assets/img/instagram.png");
 }
 
 

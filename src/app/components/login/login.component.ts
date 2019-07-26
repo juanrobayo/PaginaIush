@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {User} from '../../interfaces/user';
+import {User} from '../interfaces/user';
 import { AuthenticationService } from 'src/app/services/authentication.service';
 import { UserService } from 'src/app/services/user.service';
 import { Router } from '@angular/router';
@@ -47,7 +47,7 @@ export class LoginComponent implements OnInit {
       }).catch( (error) => {
         alert('Ocurrio un error');
         console.log(error);
-      }); 
+      });
     }).catch((error) => {
       alert('Ocurrio un error');
       console.log(error);
