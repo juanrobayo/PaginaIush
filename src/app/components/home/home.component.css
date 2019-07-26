@@ -1,15 +1,14 @@
-#home .carousel-inner img{
+#home #caruselInformativo img{
 height: 600px;
-object-fit:inherit;
+object-fit: cover;
 filter: grayscale(40%);
 }
 /* posicion relativa para texto */
 #carouselExampleControls{
 position: relative;
 }
-
-#carouselExampleControls .overlay{
 /* sobre escribir texto en imagenes y  response */
+#carouselExampleControls .overlay{
 position: absolute;
 top: 0;
 bottom: 0;
@@ -26,27 +25,21 @@ color: white;
 
 .irArriba{
 	display: none ;
-	color:white!important;
-	width: 50px; 
-	height: 50px; 
-	border: 3px solid #009695;
-	background: #009695;
+	width: 49px; 
+	height: 49px; 
+	border: 3px solid #1e5372;
+	background: #1e5372;
 	position: fixed;
 	border-radius: 25px;
-	margin-top:15px;
+	/* margin-top:15px; */
 	z-index:10;
 	box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.64);
 	bottom:85px;
 	right:15px;
-    /* padding: 20px;
-    background: #024959;
-    color: white!important;
-    cursor: pointer;
-    position: fixed;
-    bottom: 70px;
-	right: 20px;
-	text-align: center; */
+	cursor: pointer;
+	color: white;
 }
+
 
 .whatsapp{
 	color:009695;

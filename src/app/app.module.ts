@@ -6,7 +6,6 @@ import { HomeComponent } from './components/home/home.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ProyectosComponent } from './components/proyectos/proyectos.component';
 import { LoginComponent } from './components/login/login.component';
-import { RegisterComponent } from './components/register/register.component';
 import { Routes, RouterModule } from '@angular/router';
 import { AngularFireModule } from '@angular/fire';
 import { environment } from 'src/environments/environment';
@@ -21,7 +20,6 @@ const appRoutes: Routes = [
   {path: '', component:HomeComponent},
   {path: 'home', component:HomeComponent},
   {path: 'login', component:LoginComponent},
-  {path: 'register', component:RegisterComponent},
   {path: 'proyectos', component:ProyectosComponent}
 ];
 @NgModule({
@@ -31,8 +29,7 @@ const appRoutes: Routes = [
     HomeComponent,
     FooterComponent,
     ProyectosComponent,
-    LoginComponent,
-    RegisterComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

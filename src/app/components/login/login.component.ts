@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {User} from '../../interfaces/user';
 import { AuthenticationService } from 'src/app/services/authentication.service';
 import { UserService } from 'src/app/services/user.service';
+import { Router } from '@angular/router';
 // import { AuthenticationService } from "src/app/services/AuthenticationService";
 
 @Component({
@@ -17,7 +18,7 @@ export class LoginComponent implements OnInit {
   password: string = null;
   nick: string = null;
 
-  constructor(private authenticationService: AuthenticationService, private userService: UserService) {  }
+  constructor(private authenticationService: AuthenticationService, private userService: UserService, private router: Router) {  }
 
   ngOnInit() {
   }
@@ -26,6 +27,7 @@ export class LoginComponent implements OnInit {
     this.authenticationService.loginWithEmail(this.email,this.password).then( data => {
       alert('Loggeado correctamente');
       console.log(data);
+      this.router.navigate(['home']);
     }).catch( error => {
       alert('Ocurrio un error');
       console.log(error);
