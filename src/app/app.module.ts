@@ -15,6 +15,8 @@ import { AngularFireStorageModule } from '@angular/fire/storage';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { FormsModule } from '@angular/forms';
+import { ResenaHistoricaComponent } from './components/resena-historica/resena-historica.component';
+import { ActualidadProyectosComponent } from './components/actualidad-proyectos/actualidad-proyectos.component';
 
 
 const appRoutes: Routes = [
@@ -22,7 +24,10 @@ const appRoutes: Routes = [
   {path: 'home', component:HomeComponent},
   {path: 'login', component:LoginComponent},
   {path: 'register', component:RegisterComponent},
-  {path: 'proyectos', component:ProyectosComponent}
+  {path: 'proyectos', component:ProyectosComponent},
+  {path: 'resenahistorica', component:ResenaHistoricaComponent},
+  {path: 'actualidad-proyectos', component:ActualidadProyectosComponent}
+
 ];
 @NgModule({
   declarations: [
@@ -33,6 +38,8 @@ const appRoutes: Routes = [
     ProyectosComponent,
     LoginComponent,
     RegisterComponent,
+    ResenaHistoricaComponent,
+    ActualidadProyectosComponent,
   ],
   imports: [
     BrowserModule,
