@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import {User} from '../../interfaces/user';
+import {User} from '../interfaces/user';
 import { AuthenticationService } from 'src/app/services/authentication.service';
 import { UserService } from 'src/app/services/user.service';
+import { Router } from '@angular/router';
 // import { AuthenticationService } from "src/app/services/AuthenticationService";
 
 @Component({
@@ -11,13 +12,12 @@ import { UserService } from 'src/app/services/user.service';
 })
 
 export class LoginComponent implements OnInit {
-  // friends: User[];
   operation: string = 'login';
   email: string = null;
   password: string = null;
   nick: string = null;
 
-  constructor(private authenticationService: AuthenticationService, private userService: UserService) {  }
+  constructor(private authenticationService: AuthenticationService, private userService: UserService, private router: Router) {  }
 
   ngOnInit() {
   }
@@ -26,6 +26,7 @@ export class LoginComponent implements OnInit {
     this.authenticationService.loginWithEmail(this.email,this.password).then( data => {
       alert('Loggeado correctamente');
       console.log(data);
+      this.router.navigate(['panel-semillero']);
     }).catch( error => {
       alert('Ocurrio un error');
       console.log(error);
@@ -45,43 +46,10 @@ export class LoginComponent implements OnInit {
       }).catch( (error) => {
         alert('Ocurrio un error');
         console.log(error);
-      }); 
+      });
     }).catch((error) => {
       alert('Ocurrio un error');
       console.log(error);
     });
   }
 }
-
-
-// let usuario1: User = {
-//   name: 'andres',
-//   age: 27,
-//   email: 'andres_marin1992@hotmail.com',
-//   uid: 1,
-// };
-// let usuario2: User = {
-//   name: 'pedro',
-//   age: 32,
-//   email: 'pedro_marin1982@hotmail.com',
-//   uid: 2,
-// };
-// let usuario3: User = {
-//   name: 'carlos',
-//   age: 17,
-//   email: 'carlos_marin1992@hotmail.com',
-//   uid: 3,
-// };
-// let usuario4: User = {
-//   name: 'juan',
-//   age: 27,
-//   email: 'mono@hotmail.com',
-//   uid: 4,
-// };
-// let usuario5: User = {
-//   name: 'camila',
-//   age: 37,
-//   email: 'hook@hotmail.com',
-//   uid: 5,
-// };
-// this.friends = [usuario1,usuario2,usuario3,usuario4,usuario5];

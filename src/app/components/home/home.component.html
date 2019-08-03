@@ -3,7 +3,7 @@
 <main id="home" >
 
   <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-    <div class="carousel-inner">
+    <div class="carousel-inner" id="caruselInformativo">
       <div class="carousel-item active">
         <img src="assets/img/image2.jpg" class="d-block w-100" alt="...">
       </div>
@@ -11,15 +11,20 @@
         <img src="assets/img/image4.jpg" class="d-block w-100" alt="Image 4">
       </div>
     </div>
+    
     <div class="overlay">
         <div class="container">
           <div class="row  align-items-center">
             <div class="col-md-6 offset-mdr-6">
-              <h1 class="text-center">Historia</h1>
+              <h1 class="text-center">Semilleros</h1>
                 <p>
+<<<<<<< HEAD
                   El 28 de febrero de 2017 se dio inicio al semillero de programación de Escuela de 
                   Ingeniería en el programa de Sistemas con el nombre Semillero de Programación 
                   JAP y fue creado con la misión de involucrar a los estudiantes de la escuela de ingeniería en el mundo de la programación y algunos de sus paradigmas, teniendo como premisa la investigación y la autocapacitación para impactar el medio con las competencias adquiridas en tema de lógica, algoritmos, programación y bases de datos.
+=======
+                  Se creo con con la misión de involucrar a los estudiantes de la escuela de ingeniería en el mundo de la programación y algunos de sus paradigmas, teniendo como premisa la investigación y la autocapacitación para impactar el medio con las competencias adquiridas en tema de lógica, algoritmos, programación y bases de datos.
+>>>>>>> abf55698c95e6130a060b3189387fbe191fd337f
                 </p>
             </div>
           </div>
@@ -27,19 +32,62 @@
     </div>
   </div>
 
+<<<<<<< HEAD
   <section>
     <div class="container mt-4 mb-4 " >
       <div class="row align-items-center">
         <div class="col-12 col-md-6 col-lg-3">
+=======
+  
+
+  <div id="carouselExampleIndicators" class="carousel slide mt-4 mb-2" data-ride="carousel" style="background-color: rgba(0, 0, 0, 0.1) ">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+          <div class="container mt-4 mb-5 " >
+              <div class="row " >
+                <div class="col-12 col-md-6 col-lg-4" *ngFor="let Noticias of informacion">
+                  <div class="card" >
+                    <img src={{Noticias.file}} class="card-img-top" alt="logoSisas">
+                    <div class="card-body">
+                      <h5 class="card-title">{{Noticias.titulo}}</h5>
+                      <p class="card-text">{{Noticias.detalle}}</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      </div>
+      <!-- <div class="carousel-item">
+        <img src="assets/img/semillero1.jfif" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/img/semillero2.jpg" class="d-block w-100" alt="...">
+      </div> -->
+    </div>
+  </div>
+  
+
+  <!-- <section>
+    <div class="container mt-4 mb-4 " >
+      <div class="row " >
+        <div class="col-12 col-md-6 col-lg-3" *ngFor="let Noticias of informacion">
+>>>>>>> abf55698c95e6130a060b3189387fbe191fd337f
           <div class="card" >
-            <img src="assets/img/logoSisas.jpeg" class="card-img-top" alt="...">
+            <img src={{Noticias.file}} class="card-img-top" alt="logoSisas">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <h5 class="card-title">{{Noticias.titulo}}</h5>
+              <p class="card-text">{{Noticias.detalle}}</p>
               <a href="#" class="btn btn-primary">Go somewhere</a>
             </div>
           </div>
         </div>
+<<<<<<< HEAD
 <!-- card para mostrar imagenes -->
         <div class="col-12 col-md-6 col-lg-3">
             <div class="card" >
@@ -60,6 +108,19 @@
     <i class="fas fa-arrow-up fa-3x"></i>
   </a>
   <a class="whatsapp text-center">
+=======
+      </div>
+    </div>
+  </section> -->
+
+
+  <div  class="irArriba ">
+    <i  class=" fas fa-chevron-up fa-2x "></i>
+  </div>
+
+
+  <a class="whatsapp text-center ">
+>>>>>>> abf55698c95e6130a060b3189387fbe191fd337f
     <a href="https://api.whatsapp.com/send?phone=573003995847" target="blank">
         <i class="social-link whatsApp"></i>
     </a> 
@@ -67,4 +128,6 @@
 </main>
 
 <app-footer></app-footer>
+
+
 

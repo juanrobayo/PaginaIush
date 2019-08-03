@@ -7,10 +7,11 @@
 }
 
 #header{
-    position: absolute;
-    z-index: 2;
+    /* position: absolute; */
+    /* z-index: 2; */
     width: 100%; 
-    background-color: rgba(0, 0, 0, 0.00);
+    /* background-color: rgba(0, 0, 0, 0); */
+    background-color: #1e5372;
 }
 
 #header .container a{
