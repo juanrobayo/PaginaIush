@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Noticias } from 'src/app/interfaces/noticias';
+import { Noticias } from 'src/app/components/interfaces/noticias';
 
 @Component({
   selector: 'app-home',
