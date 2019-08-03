@@ -4,15 +4,15 @@ import { HomeComponent } from './components/home/home.component';
 
 
 
-const routes: Routes = [
+// const routes: Routes = [
 
-{path:'',component:HomeComponent},
-{path:'home',component:HomeComponent}
+// {path:'',component:HomeComponent},
+// {path:'home',component:HomeComponent}
 
-];
+// ];
 
-@NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
-})
+// @NgModule({
+//   imports: [RouterModule.forRoot(routes)],
+//   exports: [RouterModule]
+// })
 export class AppRoutingModule { }

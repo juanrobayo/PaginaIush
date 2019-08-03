@@ -14,13 +14,18 @@ import { AngularFireStorageModule } from '@angular/fire/storage';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { FormsModule } from '@angular/forms';
+import { PanelSemilleroComponent } from './components/panel-semillero/panel-semillero.component';
+import { AuthenticationGuard } from './services/authentication.guard';
 
 
 const appRoutes: Routes = [
-  {path: '', component:HomeComponent},
   {path: 'home', component:HomeComponent},
   {path: 'login', component:LoginComponent},
-  {path: 'proyectos', component:ProyectosComponent}
+  {path: 'proyectos', component:ProyectosComponent},
+  {path: 'panel-semillero', component:PanelSemilleroComponent,canActivate:[AuthenticationGuard]},
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: '**', redirectTo: 'home', pathMatch: 'full' },
+  
 ];
 @NgModule({
   declarations: [
@@ -29,7 +34,8 @@ const appRoutes: Routes = [
     HomeComponent,
     FooterComponent,
     ProyectosComponent,
-    LoginComponent
+    LoginComponent,
+    PanelSemilleroComponent
   ],
   imports: [
     BrowserModule,
