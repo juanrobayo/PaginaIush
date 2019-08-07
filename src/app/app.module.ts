@@ -15,6 +15,7 @@ import { AngularFireAuthModule } from '@angular/fire/auth';
 import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { FormsModule } from '@angular/forms';
 <<<<<<< HEAD
+<<<<<<< HEAD
 import { ResenaHistoricaComponent } from './components/resena-historica/resena-historica.component';
 import { ActualidadProyectosComponent } from './components/actualidad-proyectos/actualidad-proyectos.component';
 =======
@@ -26,6 +27,10 @@ import { LineaspComponent } from './components/lineasp/lineasp.component';
 import { IntegrantesComponent } from './components/integrantes/integrantes.component';
 >>>>>>> 2f90a0ce66f2a0c9d7d92b795754f380ee01421c
 >>>>>>> abf55698c95e6130a060b3189387fbe191fd337f
+=======
+import { PanelSemilleroComponent } from './components/panel-semillero/panel-semillero.component';
+import { AuthenticationGuard } from './services/authentication.guard';
+>>>>>>> be2ab7b9cd4d303450034ecc76520a05fdfd805c
 
 
 const appRoutes: Routes = [
@@ -39,16 +44,18 @@ const appRoutes: Routes = [
 
 =======
   {path: 'proyectos', component:ProyectosComponent},
-<<<<<<< HEAD
   {path: 'panel-semillero', component:PanelSemilleroComponent,canActivate:[AuthenticationGuard]},
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: '**', redirectTo: 'home', pathMatch: 'full' },
   
+<<<<<<< HEAD
 =======
   {path: 'Lineas-Profundizacion', component:LineaspComponent},
   {path: 'Integrantes', component:IntegrantesComponent}
 >>>>>>> 2f90a0ce66f2a0c9d7d92b795754f380ee01421c
 >>>>>>> abf55698c95e6130a060b3189387fbe191fd337f
+=======
+>>>>>>> be2ab7b9cd4d303450034ecc76520a05fdfd805c
 ];
 @NgModule({
   declarations: [
@@ -58,6 +65,7 @@ const appRoutes: Routes = [
     FooterComponent,
     ProyectosComponent,
     LoginComponent,
+<<<<<<< HEAD
 <<<<<<< HEAD
     RegisterComponent,
     ResenaHistoricaComponent,
@@ -70,6 +78,9 @@ const appRoutes: Routes = [
     IntegrantesComponent
 >>>>>>> 2f90a0ce66f2a0c9d7d92b795754f380ee01421c
 >>>>>>> abf55698c95e6130a060b3189387fbe191fd337f
+=======
+    PanelSemilleroComponent
+>>>>>>> be2ab7b9cd4d303450034ecc76520a05fdfd805c
   ],
   imports: [
     BrowserModule,
