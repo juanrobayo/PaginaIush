@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { UserService } from 'src/app/services/user.service';
-import { User } from 'src/app/interfaces/user';
 import { AuthenticationService } from 'src/app/services/authentication.service';
 import { Route, Router } from '@angular/router';
+import { User } from '../interfaces/user';
 
 @Component({
   selector: 'app-panel-semillero',
