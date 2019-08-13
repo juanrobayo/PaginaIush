@@ -17,7 +17,7 @@ proyectos:tarjeta_proyecto[];
 let proyecto1 :tarjeta_proyecto={
 nombre :'Página Web Del Semillero',
 integrantes:4,
-texto: "proyecto de prubea test 1111111111111111111111111111111111",
+texto: "proyecto de prubea test ",
 campoobligatorio: true,
 file: "assets/img/proyecto3.jpg"
 };
@@ -25,7 +25,7 @@ file: "assets/img/proyecto3.jpg"
 let proyecto2 :tarjeta_proyecto={
   nombre :'Asistencias Sistematizadas/Automatizadas',
   integrantes:2,
-  texto: "proyecto de  prueba con2222222222222222222222222222222222222",
+  texto: "proyecto de  prueba con",
   campoobligatorio: true,
   file: "assets/img/proyectos1.jpg"
   }
@@ -33,7 +33,7 @@ let proyecto2 :tarjeta_proyecto={
 let proyecto3 :tarjeta_proyecto={
   nombre :'Cuadro De Turnos Vigilantes IE De Bello',
   integrantes:3,
-  texto: "proyecto de  prueba con3333333333333333333333333333333",
+  texto: "proyecto de  prueba con",
   campoobligatorio: true,
   file: "assets/img/proyecto2.jpg"
   
