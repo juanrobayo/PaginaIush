@@ -4,5 +4,4 @@ export interface tarjeta_proyecto {
     texto: string;
     campoobligatorio: boolean;
     file: string;
-
 }

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { tarjeta_proyecto } from 'src/app/interfaces/tarjeta_proyecto';
+import { tarjeta_proyecto } from '../interfaces/tarjeta_proyecto';
+
 
 @Component({
   selector: 'app-actualidad-proyectos',

@@ -1,26 +1,15 @@
-#home #caruselInformativo img{
-height: 600px;
-object-fit: cover;
-filter: grayscale(40%);
-}
-/* posicion relativa para texto */
-#carouselExampleControls{
-position: relative;
-}
-/* sobre escribir texto en imagenes y  response */
-#carouselExampleControls .overlay{
-position: absolute;
-top: 0;
-bottom: 0;
-left: 0;
-right: 0;
-background-color: rgba(0, 0, 0, 0.4);
-color: white;
+#carouselIush img{
+	height: 500px;
+	/* max-height: 60vh; */
 }
 
-#carouselExampleControls .overlay .container,
-#carouselExampleControls .overlay .row  {
-    height: 100%;
+
+@media (max-width: 575.98px) { 
+    #carouselIush img{
+		height: 250px;
+		/* max-height: 60vh; */
+	}
+
 }
 
 .irArriba{
@@ -31,7 +20,6 @@ color: white;
 	background: #1e5372;
 	position: fixed;
 	border-radius: 25px;
-	/* margin-top:15px; */
 	z-index:10;
 	box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.64);
 	bottom:80px;
@@ -65,6 +53,31 @@ color: white;
 
 .social-link.whatsApp{
     background-image: url("src/assets/img/whatsApp.png"); 
+}
+
+
+.inner{
+	overflow: hidden;
+	border-top-left-radius:5%;
+	border-top-right-radius: 5%;
+}
+
+.inner img {
+	transition: all 1.5s ease;
+	height: 250px;
+	border-top-left-radius:5%;
+	border-top-right-radius: 5%;
+}
+
+.inner:hover img {
+	transform: scale(1.5);
+	border-top-left-radius:5%;
+	border-top-right-radius: 5%;
+}
+
+#noticiasIush .card{
+	border-radius: 5%;
+	height: 500px;
 }
 
 

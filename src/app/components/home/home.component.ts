@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Noticias } from 'src/app/components/interfaces/noticias';
+import { tarjeta_proyecto } from '../interfaces/tarjeta_proyecto';
+
 
 @Component({
   selector: 'app-home',
@@ -7,7 +9,8 @@ import { Noticias } from 'src/app/components/interfaces/noticias';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-
+  
+  proyectos:tarjeta_proyecto[];
   informacion: Noticias[];
 
   constructor() {
@@ -24,13 +27,37 @@ export class HomeComponent implements OnInit {
       file:'assets/img/logoSisas.jpeg'
     }
 
-    this.informacion = [noticias1,noticias2];
+   
 
+
+    let proyecto1 :tarjeta_proyecto={
+      nombre :'Página Web Del Semillero',
+      integrantes:4,
+      texto: "proyecto de prubea test 1111111111111111111111111111111111",
+      campoobligatorio: true,
+      file: "assets/img/proyecto3.jpg"
+      };
+      
+      let proyecto2 :tarjeta_proyecto={
+        nombre :'Asistencias Sistematizadas/Automatizadas',
+        integrantes:2,
+        texto: "proyecto de  prueba ",
+        campoobligatorio: true,
+        file: "assets/img/proyectos1.jpg"
+        }
+        
+      let proyecto3 :tarjeta_proyecto={
+        nombre :'Cuadro De Turnos Vigilantes IE De Bello',
+        integrantes:3,
+        texto: "proyecto de  prueba ",
+        campoobligatorio: true,
+        file: "assets/img/proyecto2.jpg"
    }
 
+   this.informacion = [noticias1,noticias2];
+   this.proyectos=[proyecto1,proyecto2,proyecto3];
 
-
-
+  }
   ngOnInit() {
   }
 
