@@ -18,10 +18,7 @@ import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { FormsModule } from '@angular/forms';
 import { ResenaHistoricaComponent } from './components/resena-historica/resena-historica.component';
 import { ActualidadProyectosComponent } from './components/actualidad-proyectos/actualidad-proyectos.component';
-
-
 import { IntegrantesComponent } from './components/integrantes/integrantes.component';
-
 import { AuthenticationGuard } from './services/authentication.guard';
 import { from } from 'rxjs';
 
@@ -35,9 +32,10 @@ const appRoutes: Routes = [
   {path: 'proyectos', component:ProyectosComponent},
   {path: 'panel-semillero', component:PanelSemilleroComponent,canActivate:[AuthenticationGuard]},
   {path: 'lineasp', component:LineaspComponent},
+  {path: 'integrantes', component:IntegrantesComponent},
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: '**', redirectTo: 'home', pathMatch: 'full' },
-  {path: 'Integrantes', component:IntegrantesComponent}
+  
 ];
 @NgModule({
   declarations: [
