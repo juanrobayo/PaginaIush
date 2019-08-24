@@ -29,15 +29,15 @@ const appRoutes: Routes = [
   {path: 'home', component:HomeComponent},
   {path: 'login', component:LoginComponent},
   {path: 'proyectos', component:ProyectosComponent},
+  {path: 'integrantes', component:IntegrantesComponent},
   {path: 'resenahistorica', component:ResenaHistoricaComponent},
   {path: 'actualidad-proyectos', component:ActualidadProyectosComponent},
   {path: 'proyectos', component:ProyectosComponent},
   {path: 'panel-semillero', component:PanelSemilleroComponent,canActivate:[AuthenticationGuard]},
+  
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: '**', redirectTo: 'home', pathMatch: 'full' },
-  {path: 'Lineas-Profundizacion', component:LineaspComponent},
-  {path: 'Integrantes', component:IntegrantesComponent},
-
+  {path: 'Lineas-Profundizacion', component:LineaspComponent}
 ];
 @NgModule({
   declarations: [
@@ -52,7 +52,7 @@ const appRoutes: Routes = [
     PanelSemilleroComponent,
     LineaspComponent,
     IntegrantesComponent,
-    PanelSemilleroComponent,
+    PanelSemilleroComponent
   ],
   imports: [
     BrowserModule,
