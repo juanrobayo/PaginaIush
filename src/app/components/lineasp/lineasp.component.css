@@ -1,0 +1,34 @@
+#sinEstilo {
+    list-style:none;
+}
+
+#cust{
+    width: 35px;
+    margin-left: 10px;
+    
+}
+
+/* .footer{
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}  */
+
+@media (max-width: 575.98px) { 
+    .footer{
+        position: relative;
+    }
+ }
+    
+ @media (max-width: 767.98px) { 
+    .footer{
+        position: relative;
+    }
+  }
+
+  @media (max-width: 991.98px) { 
+    .footer{
+        position: relative;
+    }
+   }
+

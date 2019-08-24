@@ -6,6 +6,8 @@ import { HomeComponent } from './components/home/home.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ProyectosComponent } from './components/proyectos/proyectos.component';
 import { LoginComponent } from './components/login/login.component';
+import { LineaspComponent } from './components/lineasp/lineasp.component';
+import { PanelSemilleroComponent } from './components/panel-semillero/panel-semillero.component';
 import { Routes, RouterModule } from '@angular/router';
 import { AngularFireModule } from '@angular/fire';
 import { environment } from 'src/environments/environment';
@@ -17,12 +19,11 @@ import { FormsModule } from '@angular/forms';
 import { ResenaHistoricaComponent } from './components/resena-historica/resena-historica.component';
 import { ActualidadProyectosComponent } from './components/actualidad-proyectos/actualidad-proyectos.component';
 
-import { LineaspComponent } from './components/lineasp/lineasp.component';
+
 import { IntegrantesComponent } from './components/integrantes/integrantes.component';
 
-
-import { PanelSemilleroComponent } from './components/panel-semillero/panel-semillero.component';
 import { AuthenticationGuard } from './services/authentication.guard';
+import { from } from 'rxjs';
 
 
 const appRoutes: Routes = [
@@ -33,11 +34,10 @@ const appRoutes: Routes = [
   {path: 'actualidad-proyectos', component:ActualidadProyectosComponent},
   {path: 'proyectos', component:ProyectosComponent},
   {path: 'panel-semillero', component:PanelSemilleroComponent,canActivate:[AuthenticationGuard]},
+  {path: 'lineasp', component:LineaspComponent},
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: '**', redirectTo: 'home', pathMatch: 'full' },
-  {path: 'Lineas-Profundizacion', component:LineaspComponent},
-  {path: 'Integrantes', component:IntegrantesComponent},
-
+  {path: 'Integrantes', component:IntegrantesComponent}
 ];
 @NgModule({
   declarations: [
