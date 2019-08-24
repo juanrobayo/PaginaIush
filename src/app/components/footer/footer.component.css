@@ -1,15 +1,11 @@
 #footer{
-    background-color:#1e5372;
+    background-color:#1e5372;  
+    text-align: center;
 }
 
  p,.figure-caption{
     color: rgb(255, 255, 255);
 }
-
-#links  a{
-    color: rgb(99, 153, 17);
-}
-
 .description .titulo {
     font-size: 20px;
     color: white;

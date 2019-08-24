@@ -1,5 +1,4 @@
 #header img{
-
     object-fit: fill;
     width: 50px;
     height: 40px;
@@ -7,11 +6,9 @@
 }
 
 #header{
-    /* position: absolute; */
-    /* z-index: 2; */
     width: 100%; 
-    /* background-color: rgba(0, 0, 0, 0); */
     background-color: white;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.64);
 }
 
 #header .container a{
@@ -21,5 +18,14 @@
 #dropdownmenu .dropdown-item{
     color:black !important;
 
+}
+
+@media (max-width: 575.98px) { 
+    #header{
+       
+        background-color:rgba(0,0,0,0.2);
+        /* text-align: center; */
+    }
+    
 }
   
