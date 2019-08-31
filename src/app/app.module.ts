@@ -28,7 +28,7 @@ const appRoutes: Routes = [
   {path: 'login', component:LoginComponent},
   {path: 'proyectos', component:ProyectosComponent},
   {path: 'resenahistorica', component:ResenaHistoricaComponent},
-  {path: 'actualidad-proyectos', component:ActualidadProyectosComponent},
+  {path: 'actualidad-proyectos/:pid', component:ActualidadProyectosComponent},
   {path: 'proyectos', component:ProyectosComponent},
   {path: 'panel-semillero', component:PanelSemilleroComponent,canActivate:[AuthenticationGuard]},
   {path: 'lineasp', component:LineaspComponent},
