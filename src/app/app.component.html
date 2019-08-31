@@ -1,1 +1,6 @@
-<router-outlet></router-outlet>
+<app-header></app-header>
+<div class="generalContent">
+
+    <router-outlet></router-outlet>
+</div>
+<app-footer *ngIf="router.url != '/login'"></app-footer>

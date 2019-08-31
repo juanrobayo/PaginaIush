@@ -22,10 +22,8 @@
 
 @media (max-width: 575.98px) { 
     #header{
-       
         background-color:rgba(0,0,0,0.2);
-        /* text-align: center; */
+        text-align: center;
     }
-    
 }
   
