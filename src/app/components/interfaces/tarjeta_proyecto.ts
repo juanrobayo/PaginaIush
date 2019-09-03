@@ -5,9 +5,18 @@ export interface tarjeta_proyecto {
     file: string;
     pid: number;
     texto1: string;
-    integrante1:string;
-    integrante2:string;
-    integrante3:string;
-    
 
+
+}
+
+export interface Integrantes{
+pid:number;
+nombre: string;
+correo:string;
+descripcion:string;
+telefono:number;
+file:string;
+
+
+    
 }

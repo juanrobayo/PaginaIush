@@ -17,9 +17,7 @@ export class TarjetaProyectoService {
       file: "assets/img/proyecto3.jpg",
       pid:1,
       texto1:'',
-      integrante1:'Juan Esteban Robayo',
-      integrante2:'Andres Felipe Marin',
-      integrante3:'Juan Esteban Cano',
+    
 
       };
       
@@ -30,10 +28,7 @@ export class TarjetaProyectoService {
         file: "assets/img/proyectos1.jpg",
         pid:2,
         texto1:'',
-        integrante1:'Juan Esteban Robayo',
-        integrante2:'Andres Felipe Marin',
-        integrante3:'Juan Esteban Cano',
-  
+       
         }
         
       let proyecto3 :tarjeta_proyecto={
@@ -43,9 +38,7 @@ export class TarjetaProyectoService {
         file: "assets/img/proyecto2.jpg",
         pid:3,
         texto1:'',
-        integrante1:'Juan Esteban Robayo',
-        integrante2:'Andres Felipe Marin',
-        integrante3:'Juan Esteban Cano',
+        
   
   }
   this.proyectos=[proyecto1,proyecto2,proyecto3];

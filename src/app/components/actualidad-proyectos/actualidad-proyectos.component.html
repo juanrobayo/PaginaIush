@@ -1,11 +1,10 @@
 
-
 <div>
 <h1 class="text-center pt-4">{{this.proyectoActual.nombre}}</h1>
 </div>
 <hr>
 
-<<div class="container">
+<div class="container">
     <div class="row">
       <div class="col">{{this.proyectoActual.texto1}}</div>
       <div class="col pb-4"><img [src]="this.proyectoActual.file" alt=""></div>
@@ -14,31 +13,30 @@
       <div class="col">4</div> -->
       </div>
       </div>
-  <!-- <div class="container mb-5">
+
+
+<ng-container *ngFor="let inte of integrantes" >
     <div class="row" id="noticiasIush">
-      <div *ngFor="let pro of proyectos" class="col-12 col-md-4 col-lg-4">
+  <div  *ngIf="inte.pid==this.protectoId" class="col-12 col-md-4 col-lg-4">
+  <div class="container mb-5">
         <div  class="card shadow mt-5" >
           <div class="inner">
-            <img src="{{pro.file}}" class="card-img-top" alt="...">
+            <img src="{{inte.file}}" class="card-img-top" alt="...">
           </div>
           <div class="card-body">
-            <h5 class="card-title"> {{pro.integrante1}} </h5>
-            <p class="card-text">{{pro.texto}}</p>
-            <a routerLink="/actualidad-proyectos/{{pro.pid}}" class="btn btn-primary">Ver</a>
+            <h5 class="card-title"> {{inte.nombre}} </h5>
+            <p class="card-text">{{inte.correo}}</p>
           </div>
         </div>  
       </div>
     </div>
   </div>
-    </div>
-  </div> -->
+</ng-container>
 
 
 <!-- 
 <img [src]="this.proyectoActual.file" alt="">
  -->
-
-
 
 <!-- <p> [{  }] </p>  -->
 
