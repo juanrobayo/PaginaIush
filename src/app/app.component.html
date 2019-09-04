@@ -1,6 +1,6 @@
-<app-header></app-header>
+<app-header *ngIf="router.url != '/panel-semillero'"></app-header>
 <div class="generalContent">
-
     <router-outlet></router-outlet>
 </div>
-<app-footer *ngIf="router.url != '/login'"></app-footer>
+<app-footer *ngIf="router.url != '/login'" ></app-footer>
+
