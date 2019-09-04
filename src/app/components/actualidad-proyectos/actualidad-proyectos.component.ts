@@ -70,26 +70,26 @@ let integrante1:Integrantes= {
 pid:1,
 nombre:'Juan Esteban Robayo Rodriguez',
 correo:'juanrobayo39@hotmail.com',
-descripcion:'pruebas!!!!!!!!',
+descripcion:'the big big bosss el APA',
 telefono:3024308719,
-file:"assets/img/icono1.png",
+file:"assets/img/image3.jpg",
 
 
 };
 
 let integrante2:Integrantes= {
-  pid:2,
+  pid:1,
   nombre:'Andres Felipe Marin Zapata',
   correo:'andresmarin1992@hotmail.com',
-  descripcion:'pruebas!!!!!!!!',
-  telefono:3024308719,
-  file:"assets/img/icono1.png"
+  descripcion:'LA MAS TORTA DE TODAS',
+  telefono:3146176107,
+  file:"assets/img/ultimo.jpeg"
 
 
 
   };
   let integrante3:Integrantes= {
-    pid:2,
+    pid:1,
     nombre:'Andres Felipe Marin Zapata',
     correo:'andresmarin1992@hotmail.com',
     descripcion:'pruebas!!!!!!!!',
