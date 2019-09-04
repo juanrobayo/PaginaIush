@@ -27,6 +27,7 @@ const appRoutes: Routes = [
   {path: 'home', component:HomeComponent},
   {path: 'login', component:LoginComponent},
   {path: 'proyectos', component:ProyectosComponent},
+  {path: 'integrantes', component:IntegrantesComponent},
   {path: 'resenahistorica', component:ResenaHistoricaComponent},
   {path: 'actualidad-proyectos/:pid', component:ActualidadProyectosComponent},
   {path: 'proyectos', component:ProyectosComponent},
@@ -50,7 +51,7 @@ const appRoutes: Routes = [
     PanelSemilleroComponent,
     LineaspComponent,
     IntegrantesComponent,
-    PanelSemilleroComponent,
+    PanelSemilleroComponent
   ],
   imports: [
     BrowserModule,
