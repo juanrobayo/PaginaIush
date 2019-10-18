@@ -8,7 +8,6 @@ import { ProyectosComponent } from './components/proyectos/proyectos.component';
 import { LoginComponent } from './components/login/login.component';
 import { LineaspComponent } from './components/lineasp/lineasp.component';
 import { PanelSemilleroComponent } from './components/panel-semillero/panel-semillero.component';
-import { Routes, RouterModule } from '@angular/router';
 import { AngularFireModule } from '@angular/fire';
 import { environment } from 'src/environments/environment';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
@@ -19,25 +18,13 @@ import { FormsModule } from '@angular/forms';
 import { ResenaHistoricaComponent } from './components/resena-historica/resena-historica.component';
 import { ActualidadProyectosComponent } from './components/actualidad-proyectos/actualidad-proyectos.component';
 import { IntegrantesComponent } from './components/integrantes/integrantes.component';
-import { AuthenticationGuard } from './services/authentication.guard';
-import { from } from 'rxjs';
+import { AppRoutingModule } from './app-routing.module';
+import { RequisitosComponent } from './components/requisitos/requisitos.component';
+import { RequisitosFormulariosComponent } from './components/requisitos-formularios/requisitos-formularios.component';
+// import { from } from 'rxjs';
 
 
-const appRoutes: Routes = [
-  {path: 'home', component:HomeComponent},
-  {path: 'login', component:LoginComponent},
-  {path: 'proyectos', component:ProyectosComponent},
-  {path: 'integrantes', component:IntegrantesComponent},
-  {path: 'resenahistorica', component:ResenaHistoricaComponent},
-  {path: 'actualidad-proyectos/:pid', component:ActualidadProyectosComponent},
-  {path: 'proyectos', component:ProyectosComponent},
-  {path: 'panel-semillero', component:PanelSemilleroComponent,canActivate:[AuthenticationGuard]},
-  {path: 'lineasp', component:LineaspComponent},
-  {path: 'integrantes', component:IntegrantesComponent},
-  { path: '', redirectTo: 'home', pathMatch: 'full' },
-  { path: '**', redirectTo: 'home', pathMatch: 'full' },
-  
-];
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -51,11 +38,13 @@ const appRoutes: Routes = [
     PanelSemilleroComponent,
     LineaspComponent,
     IntegrantesComponent,
-    PanelSemilleroComponent
+    PanelSemilleroComponent,
+    RequisitosComponent,
+    RequisitosFormulariosComponent
   ],
   imports: [
+    AppRoutingModule,
     BrowserModule,
-    RouterModule.forRoot(appRoutes),
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
     AngularFireAuthModule ,
