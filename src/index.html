@@ -1,34 +1,17 @@
 <!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>SemilleroIush</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="assets/img/iconobola.png">
-  <link rel="stylesheet" href="./assets/css/animate.css">
-  <script src="http://code.jquery.com/jquery-latest.js"></script>
-  <script>
-      $(document).ready(function(){
-
-          $('.irArriba').click(function(){
-          $('body,html').animate({
-              scrollTop: '0px'
-              });
-          });
-
-          $(window).scroll(function(){
-              if ( $(this).scrollTop() > 0) {
-                  $('.irArriba').slideDown(300);
-              } else {
-                  $('.irArriba').slideUp(300);
-              }
-          });
-
-      });
-  </script>
-</head>
-<body class="animated fadeIn slow">
-  <app-root></app-root>
-</body>
+    <html lang="en" style="min-height: 100%;
+    position: relative;">
+        <head>
+            <meta charset="utf-8">
+            <title>SemilleroIush</title>
+            <base href="/">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="icon" type="image/x-icon" href="assets/img/sisasnegro.png">
+            <link rel="stylesheet" href="./assets/css/animate.css">
+            <script src="http://code.jquery.com/jquery-latest.js"></script>
+            <script src="./assets/js/arriba.js"></script>
+        </head>
+        <body class="prueba animated fadeIn slow" >
+            <app-root></app-root>
+        </body>
 </html>

@@ -1,6 +1,12 @@
-<app-header  *ngIf="router.url != '/panel-semillero'"></app-header>
-<div class="generalContent container mt-3 mb-3">
-    <router-outlet></router-outlet>
+<app-header  class="animated fadeIn slow" *ngIf="router.url != '/panel-semillero'"></app-header>
+
+<div class="container">
+    <router-outlet class="animated fadeIn slow"></router-outlet>
 </div>
-<app-footer *ngIf="router.url != '/login'" ></app-footer>
+
+
+
+    <app-footer *ngIf="router.url != '/login'" ></app-footer>
+
+
 

@@ -1,4 +1,4 @@
-<div class="container" id="encapsulamientoContainer">
+<div  id="encapsulamientoContainer">
     <div class="row"  >
         <div class="col-12 col-md-6 offset-md-3" >
             <img src="assets/img/LogoIush.png" class="LogoIush" alt="">
@@ -10,10 +10,10 @@
             <h3 *ngIf="operation == 'register'">Registrate</h3>
     </div>
 
-    <div class="container row" >
+    <div class="row" >
         <div class="col-12 col-md-6 offset-md-3">
-                <p *ngIf="operation == 'register'">Ya tienes cuenta? Has <a (click)="operation = 'login' ">Login</a></p>
-                <p *ngIf="operation == 'login'">No tienes cuenta?  <a (click)="operation = 'register' ">Registrate</a></p>
+                <p *ngIf="operation == 'register'">Ya tienes cuenta? <span (click)="operation = 'login' " class="badge badge-primary">Has Login</span></p>
+                <p *ngIf="operation == 'login'">No tienes cuenta?  <span (click)="operation = 'register' " class="badge badge-primary">Registrate</span></p>
 
                 <div *ngIf="operation == 'register'" class="form-group">
                     <i class="fas fa-user cust fa-2x" aria-hidden="true"></i>

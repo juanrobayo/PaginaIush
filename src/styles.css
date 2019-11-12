@@ -1,1 +1,37 @@
 /* You can add global styles to this file, and also import other style files */
+/* html{
+    min-height: 100%;
+    position: relative;
+    background-color: red;
+}
+
+body{
+    margin: 0;
+    margin-bottom: 400px;
+} */
+
+footer{
+    background-color:#1e5372;  
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    text-rendering: optimizeLegibility;
+    font-size: 16px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.prueba {
+    margin: 0;
+    margin-bottom: 380px
+}
+
+@media (max-width: 575.98px),(max-width: 768px),(max-width: 991.98px){ 
+    footer{
+       position: relative; 
+    }
+
+    .prueba{
+        margin-bottom: 0px;
+    }
+}
